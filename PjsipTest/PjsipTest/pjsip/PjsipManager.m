@@ -134,7 +134,7 @@
     
     ///设置账号格式:   sip:账号@服务地址
     char sipAccount[50];
-    sprintf(sipAccount, "sip:%s%s",accountChar,passwordChar);
+    sprintf(sipAccount, "sip:%s@%s",accountChar,passwordChar);
     config.id = pj_str(sipAccount);
     
     //设置服务器格式: sip:服务器地址
